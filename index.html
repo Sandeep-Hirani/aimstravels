@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My first website</title>
+<style>
+	
+body{
+	width: 1100px;
+
+	margin: 5;
+	background-color: white;
+	padding: 0;
+	margin: auto;
+	alignment-adjust: central;
+	display: block;
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+}
+img{
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 3s;
+	position: absolute;
+	width: 615;
+	height: 415;
+	top: 439px;
+	left: 535px;
+	visibility: visible;
+	z-index: 99;
+}
+img.fade-out{opacity:0;}
+img.fade-in{opacity:1;}
+body,td,th {
+	color: #0F0;
+}
+#header {
+	height: 200px;
+	width: 600px;
+}
+  </style>
+
+<style type="text/css">
+body {
+width: 1100px;
+background: #333;
+margin: 5;
+}
+.nextphoto {
+	padding-top: 400px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 300px;
+	width: 1058px;
+}
+.secondphoto {
+	text-align: center;
+}
+h1 {
+	color: #0CF;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+}
+h2 {
+	color: #003;
+}
+h3 {
+	font-size: 16px;
+	color: #FFF;
+}
+h4 {
+	font-size: 18px;
+	color: #000;
+}
+h5 {
+	font-size: 24px;
+	color: #000;
+}
+body {
+	background-image: url(Pics/394733.jpg);
+	background-color: #FFF;
+}
+.Titlephoto {
+	width: 150px;
+	height: 150px;
+}
+h6 {
+	font-size: 12px;
+	color: #CCC;
+}
+body,td,th {
+	color: #000;
+	text-align: center;
+}
+.information {
+	font-size: 18px;
+	background-color: #000;
+	color: #FFF;
+	text-decoration: blink;
+}
+.twoimage {
+	text-align: center;
+}
+</style>
+</head>
+
+<body leftmargin="80">
+   <blockquote>
+    
+   <div align="left">
+     <table width="567" height="159" border="0">
+    <tr>
+      <td width="126" rowspan="4">
+      <iframe src="Pics/download2.jpg" width="150" height="150"></iframe></td>
+      <td width="431" height="42"><h1>&nbsp;</h1></td>
+    </tr>
+    <tr>
+      <td><h1 align="left">Aims Travels limited </h1>
+      <h2 align="left">Come My friend A journey Awaits !!!</h2></td>
+    </tr>
+    <tr>
+      <td><h2>&nbsp;</h2></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  </iframe>
+  <iframe="">
+</div>
+<div align="center">
+  <table width="1058" height="61" border="0">
+    <tr bgcolor="#9900FF">
+      <td width="133"><h3 align="center"><a href="index.html" target="_self">HOME</a></h3></td>
+      <td width="204"><h3 align="center">LUXURY TOURS</h3></td>
+      <td width="224"><h3 align="center"><a href="travel review.html" target="_self">TRAVEL REVIEWS</a></h3></td>
+      <td width="158"><h3 align="center"><a href="gallary.html" target="_self">GALLARY</a></h3></td>
+      <td width="306"><h3 align="center"><a href="About.html" target="_self">ABOUT US</a></h3></td>
+    </tr>
+  </table>
+</div>
+<p>
+  
+</p>
+<img src="Pics/blur_edges1.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges10.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges2.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges3.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges4.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges5.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges6.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges7.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges8.jpg" width="1058" height="600" />
+<img src="Pics/blur_edges9.jpg" width="1058" height="600" />
+
+
+
+
+
+<script>
+var interval =4*20; //seconds between change
+var images = document.getElementsByTagName("img");
+var imageArray=[];
+var imageCount=images.length;
+var current=0;
+
+var randomize=function(){
+return (Math.round(Math.random()*3-1.5));}
+for (var i=0; i<imageCount;i++){
+images[i].className= 'fade-out';
+imageArray[i]=images[i];}
+imageArray.sort(randomize);
+var fade=function(){
+	imageArray[current++].className='fade-out';
+if(current==imageCount){
+current=0;
+imageArray.sort(randomize);}
+imageArray[current].className='fade-in';
+setTimeout(fade,interval*100);
+};
+fade();
+</script>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="twoimage"></span></p>
+<span class="twoimage">
+<iframe src="Pics/campaigns-en.jpg" width="1059" height="319" class="twoimage" ></iframe>
+</span>
+<table width="1058" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><h5><strong>It is easy to think about a vacation but the greatest task is planning it and we do it witth care so that none of our valued customers ever complain.From the <em>Great Wall of China</em> to the <em>Eifell tower of Paris</em>,we have it all,all you need is to APPLY, and our <em>team</em> of <em>qualified </em></strong><strong><em>professionals</em> will do the job for you.</strong></h5></td>
+  </tr>
+</table>
+
+
+<p><iframe src="../../Documents/My own website/Pics/beech ka.JPG" width="1058" height="374" ></iframe></p>
+<p><iframe src="Pics/002.jpg" width="1061" height="562" class="for" ></iframe></p>
+<table width="1058" border="0" align="center" cellpadding="6" cellspacing="6" class="information">
+  <tr>
+    <td bgcolor="#FF6600" style="color: #FFF; font-size: 24px; font-family: 'MS Serif', 'New York', serif; font-weight: bold;"><div align="center">      <strong>COMPANY</strong>    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF; font-size: 24px; font-family: 'MS Serif', 'New York', serif; font-weight: bold;"><div align="center">      <strong>CONTACT</strong>    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF; font-family: 'MS Serif', 'New York', serif; font-size: 24px; font-weight: bold;"><div align="center">      <strong>MORE</strong>    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      About    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Help/FAQ    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Airlines Fees    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Careers    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Press    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Airlines    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Mobile    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Partners    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Low Fare Tips    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Blogs    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Hotel Owners    </div></td>
+    <td bgcolor="#FF6600" style="color: #FFF"><div align="center">      Direct Routes</div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>
